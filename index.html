@@ -1,14 +1,18 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ru">
 <head>
-	<meta charset="UTF-8">
-	<title>FIGMA | Макеты для верстки — Верстка страницы</title>
-	<meta name="description" content="Макет для верстки сайта был взял с телеграм канала FIGMA | Макеты для верстки">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FIGMA | Макеты для верстки — Верстка страницы</title>
+    <meta name="description" content="Макет для верстки сайта был взял с телеграм канала FIGMA | Макеты для верстки">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css">
+    <!-- Подключение главного CSS-файла -->
+    <link rel="stylesheet" href="css/style.min.css">
+    
     <link rel="stylesheet" href="css/base.css">
 </head>
 <body>
-
-    <!-- Начало: Данный блок удалять нельзя -->
+  <!-- Начало: Данный блок удалять нельзя -->
     <div class="maketforfigma">
         <a href="https://t.me/s/FigmaToHTML" target="_blank">
             <img src="img/logo.png">
@@ -22,11 +26,315 @@
             </p>
         </div>
     </div>
-    <!-- Конец -->
 
-    <div class="main">
-        В данном блоке размещается верстка
+  <div class="main">
+    <div class="wrapper">
+      <div class="first-screen">
+        <header class="header">
+      <div class="header__container">
+          <div class="header__blocks">
+              <img src="img/logo.webp" alt="Не удалось загрузить изображение" class="header__logo">
+              <div class="header__menu menu" data-da=".header__container,768,last">
+                  <nav class="menu__body">
+                      <ul class="menu__list">
+                          <li class="menu__item"><a href="#" class="menu__link">О нас</a></li>
+                          <li class="menu__item"><a href="#" class="menu__link">Галерея</a></li>
+                          <li class="menu__item"><a href="#" class="menu__link">Абонементы</a></li>
+                          <li class="menu__item"><a href="#" class="menu__link">Тренеры</a></li>
+                          <li class="menu__item"><a href="#" class="menu__link">Контакты</a></li>
+                      </ul>
+                  </nav>
+              </div>
+              <img src="img/top-decor.svg" alt="Не удалось загрузить изображение" class="header__decoration-line">
+              <a href="#" class="header__number" data-da=".menu__list,460,last">+7 (496) 416-19-16</a>
+              <div class="menu__icon" id="menu-icon" data-open-block="menu"><span></span></div>
+          </div>
+          
+      </div>
+  </header>
+        <div class="welcome">
+    <img src="img/left-decor.svg" alt="Не удалось загрузить изображение" class="welcome__decoration">
+    <div class="welcome__container">
+      <div class="welcome__center-block">
+        <h1 class="welcome__title">Фитнес клуб Пантеон</h1>
+        <p class="welcome__description">Лучше нас только боги</p>
+        <a href="#" class="welcome__button button button_color_orange"><span class="line"><span class="text">Получить консультацию</span></span></a>
+      </div>
+      <div class="welcome__navigation">
+        <div class="welcome__arrow"><img src="img/arrow-bottom.svg" alt="Не удалось загрузить изображение" class="welcome__image"></div>
+        <ul class="welcome__social-icons">
+          <li class="welcome__social-icon"><a href="#" class="welcome__link"><img src="img/zapregram.svg" alt="Не удалось загрузить изображение" class="welcome__image"></a></li>
+          <li class="welcome__social-icon"><a href="#" class="welcome__link"><img src="img/vk.svg" alt="Не удалось загрузить изображение" class="welcome__image"></a></li>
+        </ul>
+      </div>
     </div>
+  </div>
+      </div>
+      <main class="main">
+        <div class="about">
+    <div class="about__container">
+      <div class="about__block-image">
+        <img src="img/about-image.webp" alt="Не удалось загрузить изображение" class="about__image">
+      </div>
+      <div class="about__content">
+        <h2 class="about__title">Новый образ жизни</h2>
+        <p class="about__description">Став частью нашей команды, вы сможете изменить привычный ритм жизни и сделать каждый свой день особенным, а формат наших тренировок позволит вам раскрыть потенциал вашего тела на 100%.</p>
+        <a href="#" class="about__button button button_color_transparent"><span>Получить консультацию</span></a>
+      </div>
+    </div>
+  </div>
+        <div class="advantages">
+    <div class="advantages__container">
+      <div class="advantages__card">
+        <svg class="advantages__icon"><use href="img/icons/icons.svg#stationary-bike"></use></svg>
+        <p class="advantages__title">Полностью укомплектованный зал</p>
+      </div>
+      <div class="advantages__card">
+        <svg class="advantages__icon"><use href="img/icons/icons.svg#dumbbell"></use></svg>
+        <p class="advantages__title">Профессиональное оборудование</p>
+      </div>
+      <div class="advantages__card">
+        <svg class="advantages__icon"><use href="img/icons/icons.svg#location"></use></svg>
+        <p class="advantages__title">Удобное расположение в центре города</p>
+      </div>
+      <div class="advantages__card">
+        <svg class="advantages__icon"><use href="img/icons/icons.svg#wallet"></use></svg>
+        <p class="advantages__title">Доступная стоимость занятий</p>
+      </div>
+    </div>
+  </div>
+        <div class="gallery">
+    <div class="gallery__container">
+      <h2 class="gallery__title">Галерея</h2>
+      <div class="gallery__slider-one swiper">
+        <div class="gallery__wrapper swiper-wrapper">
+          <div class="gallery__slide swiper-slide"><img src="img/gallery-01.webp" alt="Не удалось загрузить изображение" class="gallery__image"></div>
+          <div class="gallery__slide swiper-slide"><img src="img/gallery-02.webp" alt="Не удалось загрузить изображение" class="gallery__image"></div>
+          <div class="gallery__slide swiper-slide"><img src="img/gallery-03.webp" alt="Не удалось загрузить изображение" class="gallery__image"></div>
+          <div class="gallery__slide swiper-slide"><img src="img/gallery-04.webp" alt="Не удалось загрузить изображение" class="gallery__image"></div>
+        </div>
+        <div class="gallery__pagination swiper-pagination"></div>
+      </div>
 
+      <div class="gallery__slider-two swiper">
+        <div class="gallery__wrapper swiper-wrapper">
+          <div class="gallery__slide swiper-slide"><img src="img/gallery2-01.webp" alt="Не удалось загрузить изображение" class="gallery__image"></div>
+          <div class="gallery__slide swiper-slide"><img src="img/gallery2-02.webp" alt="Не удалось загрузить изображение" class="gallery__image"></div>
+          <div class="gallery__slide swiper-slide"><img src="img/gallery2-03.webp" alt="Не удалось загрузить изображение" class="gallery__image"></div>
+        </div>
+        <div class="gallery__pagination swiper-pagination"></div>
+      </div>
+    </div>
+  </div>
+        <div class="subscriptions">
+    <div class="subscriptions__container">
+      <table>
+        <tr class="subscriptions__header">
+          <th>Кол-во занятий</th>
+          <th>1 тренировка</th>
+          <th>4 тренировки</th>
+          <th>8 тренировок</th>
+          <th class="orange">12 тренировок</th>
+        </tr>
+        <tr>
+            <th class="orange">Персональный тренинг с инструктором</th>
+            <td>700 руб.</td>
+            <td>2600 руб. (действителен в течении 3 недель)</td>
+            <td>5200 руб. (действителен в течении 6 недель)</td>
+            <td>7200 руб. (действителен в течении 10 недель)</td>
+        </tr>
+        <tr>
+          <th>Самостоятельные тренировки в тренажерном зале</th>
+          <td>250 руб.</td>
+          <td>—</td>
+          <td>1500 руб. (действителен в течении 30 дней)</td>
+          <td>2000 руб. (действителен в течении 10 недель)</td>
+        </tr>
+        <tr>
+          <th>Зал групповых программ</th>
+          <td>300 руб.</td>
+          <td>—</td>
+          <td>2000 руб. (действителен в течении 30 дней)</td>
+          <td>2750 руб. (действителен в течении 10 недель)</td>
+        </tr>
+      </table>
+
+      <table>
+        <h2 class="title">Абонемент по времени</h2>
+        <tr class="subscriptions__header">
+          <th>Тип карты</th>
+          <th>12 месяцев</th>
+          <th class="orange">6 месяцев</th>
+          <th>3 месяца</th>
+          <th>1 месяц</th>
+        </tr>
+        <tr>
+            <th class="orange">Индивидуальная,
+              полная без ограничения
+              в посещении / 8:00 – 23:00</th>
+            <td>18000
+              (+200 мин. солярия)</td>
+            <td>12000</td>
+            <td>7000</td>
+            <td>2500</td>
+        </tr>
+        <tr>
+          <th>Индивидуальная,
+            дневная / 8:00 – 17:00</th>
+          <td>—</td>
+          <td>9500</td>
+          <td>5500</td>
+          <td>2000</td>
+        </tr>
+        </tr>
+      </table>
+    </div>
+  </div>
+        <div class="onetime-workouts">
+    <div class="onetime-workouts__container">
+      <h3 class="onetime-workouts__title">Разовые тренировки</h3>
+      <div class="onetime-workouts__cards">
+        <div class="onetime-workouts__card">
+          <h4 class="onetime-workouts__card-title">Самостоятельные тренировки в тренажерном зале</h4>
+          <p class="onetime-workouts__time">8:00 – 23:00</p>
+          <img class="onetime-workouts__icon" src="img/clock.svg">
+          <p class="onetime-workouts__price">250₽</p>
+          <p class="onetime-workouts__workouts">1 тренировка</p>
+          <a href="#" class="onetime-workouts__button button button_color_transparent-hover-orange"><span>Узнать</span></a>
+        </div>
+        <div class="onetime-workouts__card">
+          <h4 class="onetime-workouts__card-title">Персональный тренинг
+            с инструктором</h4>
+          <p class="onetime-workouts__time">8:00 – 23:00</p>
+          <img class="onetime-workouts__icon" src="img/clock.svg">
+          <p class="onetime-workouts__price">700₽</p>
+          <p class="onetime-workouts__workouts">1 тренировка</p>
+          <a href="#" class="onetime-workouts__button button button_color_transparent-hover-orange"><span>Узнать</span></a>
+        </div>
+        <div class="onetime-workouts__card">
+          <h4 class="onetime-workouts__card-title">Зал групповых программ</h4>
+          <p class="onetime-workouts__time">график занятий уточняйте у администратора</p>
+          <img class="onetime-workouts__icon" src="img/clock.svg">
+          <p class="onetime-workouts__price">300₽</p>
+          <p class="onetime-workouts__workouts">1 тренировка</p>
+          <a href="#" class="onetime-workouts__button button button_color_transparent-hover-orange"><span>Узнать</span></a>
+        </div>
+      </div>
+    </div>
+  </div>
+        <div class="coaches">
+    <div class="coaches__container">
+      <h2 class="coaches__title">Тренеры</h2>
+      <div class="coaches__slider swiper">
+        <div class="coaches__wrapper swiper-wrapper">
+          <div class="coaches__slide coaches-card swiper-slide">
+            <img src="img/coach-01.webp" alt="Не удалось загрузить изображение" class="coaches__image">
+            <h4 class="coaches-card__title">Илья Панченко</h4>
+            <p class="coaches-card__work-title">Персональный тренер</p>
+            <p class="coaches-card__expirience">Опыт работы — 4 года</p>
+          </div>
+          <div class="coaches__slide coaches-card swiper-slide">
+            <img src="img/coach-02.webp" alt="Не удалось загрузить изображение" class="coaches__image">
+            <h4 class="coaches-card__title">Екатерина Сосина-Нуньес</h4>
+            <p class="coaches-card__work-title">Фитнес-тренер</p>
+            <p class="coaches-card__expirience">Опыт работы — 4 года</p>
+          </div>
+          <div class="coaches__slide coaches-card swiper-slide">
+            <img src="img/coach-03.webp" alt="Не удалось загрузить изображение" class="coaches__image">
+            <h4 class="coaches-card__title">Юлия Белова</h4>
+            <p class="coaches-card__work-title">Фитнес-тренер</p>
+            <p class="coaches-card__expirience">Опыт работы — 4 года</p>
+          </div>
+          <div class="coaches__slide coaches-card swiper-slide">
+            <img src="img/coach-04.webp" alt="Не удалось загрузить изображение" class="coaches__image">
+            <h4 class="coaches-card__title">Михаил Александров</h4>
+            <p class="coaches-card__work-title">Фитнес-тренер</p>
+            <p class="coaches-card__expirience">Опыт работы — 4 года</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+        <div class="contact-us">
+    <div class="contact-us__container">
+      <div class="contact-us__form-block">
+        <h3 class="contact-us__title">Остались вопросы?</h3>
+        <p class="contact-us__description">Оставьте Ваш номер телефона
+          и мы <span>обязательно с Вами свяжемся</span></p>
+        <form action="" class="contact-us__form">
+          <input type="text" class="contact-us__input" id="name" name="name" placeholder="Введите имя">
+          <input type="text" class="contact-us__input" id="number" name="number" placeholder="Введите телефон">
+          <button class="contact-us__button button button_color_transparent" type="sumbit"><span>Получить консультацию</span></button>
+        </form>
+        <p class="contact-us__policy">
+          Нажимая на кнопку вы соглашаетесь с политикой конфиденциальности
+        </p>
+      </div>
+    </div>
+  </div>
+        <div class="contacts">
+    <div class="contacts__container">
+      <div class="contacts__block">
+        <h2 class="contacts__title">Контакты</h2>
+        <ul class="contacts__list">
+          <li class="contacts__item"><svg class="contacts__list-icon"><use href="img/icons/icons.svg#pos"></use></svg> г. Орехово-Зуево, ул. Ленина 84</li>
+          <li class="contacts__item"><svg class="contacts__list-icon"><use href="img/icons/icons.svg#contact-clock"></use></svg> Ежедневно с 8:00 до 23:00s</li>
+          <li class="contacts__item"><svg class="contacts__list-icon"><use href="img/icons/icons.svg#phone"></use></svg> +7 (496) 416-19-16,
+            <br>+7 (925) 881-21-70</li>
+        </ul>
+        <div class="contacts__social">Подписывайтесь на наши соц.сети</div>
+        <ul class="contacts__social-list">
+          <li class="contacts__item"><svg class="contacts__icon"><use href="img/icons/icons.svg#zapregram"></use></svg></li>
+          <li class="contacts__item"><svg class="contacts__icon"><use href="img/icons/icons.svg#vk"></use></svg></li>
+        </ul>
+      </div>
+    </div>
+  </div>
+      </main>
+      <footer class="footer">
+      <div class="footer__container">
+          <div class="footer__company">
+              <img src="img/logo.webp" alt="Не удалось загрузить изображение" class="footer__logo">
+              <div class="footer__copyright">© Все права защищены</div>
+              <div class="footer__company-name">Орехово-Зуево, 2013-2022</div>
+          </div>
+          <div class="footer__menu">
+              <ul class="footer__list">
+                  <li class="footer__menu-item">О нас</li>
+                  <li class="footer__menu-item">Галерея</li>
+                  <li class="footer__menu-item">Абонементы</li>
+              </ul>   
+              <ul class="footer__list">
+                  <li class="footer__menu-item">Тренеры</li>
+                  <li class="footer__menu-item">Контакты</li>
+              </ul>
+              <ul class="footer__list">
+                  <li class="footer__menu-item">Абонементы</li>
+                  <li class="footer__menu-item">Абонемент по времени</li>
+                  <li class="footer__menu-item">Разовые тренировки</li>
+              </ul>
+          </div>
+          <ul class="footer__social">
+              <li class="footer__social-item">Наши соц.сети</li>
+              <div class="footer__social-icons">
+                  <li class="footer__social-item"><svg class="footer__icon"><use href="img/icons/icons.svg#zapregram"></use></svg></li>
+                  <li class="footer__social-item"><svg class="footer__icon"><use href="img/icons/icons.svg#vk"></use></svg></li>
+              </div>
+          </ul>
+          <ul class="footer__other-info">
+              <li class="footer__info-item">г. Орехово-Зуево, ул. Ленина 84</li>
+              <li class="footer__info-item">Ежедневно с 8:00 до 23:00</li>
+              <li class="footer__info-item">+7 (496) 416-19-16, +7 (925) 881-21-70</li>
+              <li class="footer__info-item">Политика конфиденциальности</li>
+          </ul>
+      </div>
+  </footer>
+      
+      
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
+  <!-- Подключение главного JavaScript-файла -->
+  <script src="js/app.min.js"></script>
+  </div>
 </body>
 </html>
